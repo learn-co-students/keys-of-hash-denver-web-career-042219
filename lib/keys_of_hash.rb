@@ -1,13 +1,14 @@
 require "pry"
 
 class Hash
-  def keys_of(*arguments)
-    array = []
-    self.each do |items, points|
-      if arguments.include?(points)
-        array << items
-      end
-    end
-    array
-  end
+def keys_of(*arguments)
+  listOfAnimals = []
+  self.each do |animal, country|
+#    binding.pry
+    if arguments.include?(country)
+      listOfAnimals << animal
+end
+end
+return listOfAnimals
+end
 end
